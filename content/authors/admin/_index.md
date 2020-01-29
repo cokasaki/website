@@ -1,29 +1,22 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My research interests include spatial statistics, constrained optimization, and bringing more explicit modeling of physics and biology into these fields. 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
-email: ""
+  - course: BSc in Mathematics
+    institution: Harvey Mudd College
+    year: 2017
+email: "cokasaki@uw.edu"
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-name: Nelson Bighetti
+- Spatial Statistics
+- Constrained Optimization
+- Mechanistic Modeling
+name: Colin Okasaki
 organizations:
-- name: Stanford University
-  url: ""
-role: Professor of Artificial Intelligence
+- name: University of Washington
+  url: "www.washington.edu"
+role: Graduate Student
 social:
 - icon: envelope
   icon_pack: fas
@@ -43,6 +36,4 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Colin Okasaki is a graduate student in Quantitative Ecology and Resource Management at the University of Washington. He is advised by Andrew Berdahl in the School of Aquatic and Fishery Sciences. His research interests include bridging the gaps between mechanistic modeling, spatial statistics, and constrained optimization. 
