@@ -4,35 +4,31 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere 
   faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien
   eu, pulvinar tempor diam.
 address:
-  city: Stanford
+  city: Seattle
   country: United States
-  postcode: "94305"
-  region: CA
-  street: 450 Serra Mall
+  postcode: "98105"
+  region: UW
+  street: W Stevens Way NE
 all_day: false
-authors: []
-date: "2030-06-01T13:00:00Z"
-date_end: "2030-06-01T15:00:00Z"
-event: Academic Theme Conference
-event_url: https://example.org
+authors: [admin]
+date: "2020-02-012T13:30:00Z"
+date_end: "2020-02-012T14:30:00Z"
+event: Space-Time Reading Group
+event_url: https://uwspacetime.github.io/
 featured: false
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
   focal_point: Right
 links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
-location: Source Themes HQ
+location: Padelford Hall C-301
 math: true
 projects:
-- internal-project
-publishDate: "2017-01-01T00:00:00Z"
-slides: example
-summary: An example talk using Academic's Markdown slides feature.
+- source-project
+publishDate: "2020-02-06T00:00:00Z"
+slides: spacetime-feb-2020
+summary: I will be speaking about my work on source reconstruction for linear PDEs at the UW Space-Time Reading Group weekly meeting. 
 tags: []
-title: Example Talk
+title: Source Reconstruction for Linear PDEs
 url_code: ""
 url_pdf: ""
 url_slides: ""
