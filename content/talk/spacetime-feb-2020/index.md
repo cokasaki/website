@@ -11,8 +11,8 @@ address:
   street: W Stevens Way NE
 all_day: false
 authors: [admin]
-date: "2020-02-012T13:30:00Z"
-date_end: "2020-02-012T14:30:00Z"
+date: "2020-02-12T13:30:00Z"
+date_end: "2020-02-12T14:30:00Z"
 event: Space-Time Reading Group
 event_url: https://uwspacetime.github.io/
 featured: false
