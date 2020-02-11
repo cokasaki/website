@@ -5,8 +5,8 @@ date: "2019-02-05T00:00:00Z"
 slides:
   highlight_style: dracula
   theme: black
-summary: An introduction to using Academic's Slides feature.
-tags: []
+summary: A brief introduction to my use of the SPDE method to reconstruct PDE sources. 
+tags: [spacetime,spatial statistics,pdes]
 title: Slides
 ---
 
@@ -17,12 +17,11 @@ title: Slides
 ## Motivation
 
 - Pollution
-	- Say, PCBs
-	- Measure PCB concentration in the Duwamish
+	- Say, PCBs in the Duwamish
 	- Where did it come from?
 	- Easy case: point source
 		- Measure all pipe outlets
-		- Use regularization method for unknown point source
+		- Use regularization method for unknown source
 	- Hard case: non-point source
 		- ???
 
@@ -33,10 +32,10 @@ title: Slides
 - Basically this is the advection-diffusion equation
 	- Possibly with linear decay
 - Existing methods 
-	- fast Fourier transform/Kalman filter (Sigrist et. al 2014)
+	- FFT/Kalman filter (Sigrist et. al 2014)
 		- complex method 
 		- non-local basis functions
-	- finite-difference/finite-element method (Stroud et. al 2010)
+	- finite-difference/element method (Stroud et. al 2010)
 		- comparatively simple, very popular
 		- local basis functions
 		- possibly slower in some contexts

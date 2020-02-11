@@ -25,13 +25,13 @@ math: true
 projects:
 - source-project
 publishDate: "2020-02-06T00:00:00Z"
-slides: spacetime-feb-2020
+slides: 
 summary: I will be speaking about my work on source reconstruction for linear PDEs at the UW Space-Time Reading Group weekly meeting. 
 tags: []
 title: Source Reconstruction for Linear PDEs
 url_code: ""
 url_pdf: ""
-url_slides: ""
+url_slides: "slides/spacetime_feb_2020.pdf"
 url_video: ""
 ---
 

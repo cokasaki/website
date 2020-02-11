@@ -1,5 +1,5 @@
 ---
-authors: []
+authors: [admin]
 categories: []
 date: "2019-02-05T00:00:00Z"
 slides:
