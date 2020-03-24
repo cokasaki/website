@@ -5,7 +5,7 @@ image:
   caption: Photo by rawpixel on Unsplash
   focal_point: Smart
 slides: example
-summary: An example of using the in-built project page.
+summary: We investigate the effect of logistical constraints on optimal spatial sampling design. 
 tags:
 - Stochastic PDE
 - Optimal Sampling Design

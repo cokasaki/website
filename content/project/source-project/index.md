@@ -5,7 +5,7 @@ image:
   caption: Photo by rawpixel on Unsplash
   focal_point: Smart
 slides: example
-summary: An example of using the in-built project page.
+summary: We investigate the use of stochastic PDEs to conduct inference on the source term of a linear PDE. 
 tags:
 - Stochastic PDE
 - Inverse Problems

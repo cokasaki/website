@@ -1,7 +1,5 @@
 ---
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac
-  convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac
-  faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien
+abstract: Here I outline my work of PDE source reconstruction and discuss some of my current mathematical stumbling blocks.
   eu, pulvinar tempor diam.
 address:
   city: Seattle
@@ -27,7 +25,7 @@ projects:
 publishDate: "2020-02-06T00:00:00Z"
 slides: 
 summary: I will be speaking about my work on source reconstruction for linear PDEs at the UW Space-Time Reading Group weekly meeting. 
-tags: []
+tags: [spacetime]
 title: Source Reconstruction for Linear PDEs
 url_code: ""
 url_pdf: ""

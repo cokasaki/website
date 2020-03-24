@@ -4,8 +4,8 @@ external_link: ""
 image:
   caption: Photo by rawpixel on Unsplash
   focal_point: Smart
-slides: example
-summary: An example of using the in-built project page.
+slides: ""
+summary: "We investigate the possibility for collective behavior of salmon to facilitate navigation of man-made dams along the Columbia river."
 tags:
 - Bootstrap
 - Survival Modeling
