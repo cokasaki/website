@@ -26,3 +26,14 @@ Afternoon: 1-3
 
 Afternoon: 3-5
 - Refamiliarize myself with animal movement case study
+
+## Reality ##
+
+Schedule:
+The UW resource page has 20 sections. The CMU page has 16 sections, and the Visual Learning book has 31 chapters. I plan on reading roughly 1 section, 1 section, and 2 chapters each week, starting next week.
+
+Proposal:
+Completed and sent to Andrew for feedback.
+
+Animal Movement:
+Looked over the code, tried to re-run it. Got an Anaconda version conflict that I don't remember. Will plan on dealing with that tomorrow. 
