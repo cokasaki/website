@@ -2,15 +2,15 @@
 date: "2016-04-27T00:00:00Z"
 external_link: ""
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption: Demo of optimal spatial design in Tanana, Alaska
   focal_point: Smart
-slides: example
+slides: 
 summary: We investigate the effect of logistical constraints on optimal spatial sampling design. 
 tags:
+- Statistics
 - Stochastic PDE
-- Optimal Sampling Design
-- Operations Research
 - Spatial Statistics
+- Optimization
 title: Logistically-Constrained Optimal Spatial Sampling Design
 url_code: ""
 url_pdf: ""

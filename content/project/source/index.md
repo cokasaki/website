@@ -4,11 +4,11 @@ external_link: ""
 image:
   caption: Photo by rawpixel on Unsplash
   focal_point: Smart
-slides: example
+slides: 
 summary: We investigate the use of stochastic PDEs to conduct inference on the source term of a linear PDE. 
 tags:
+- Statistics
 - Stochastic PDE
-- Inverse Problems
 - Spatial Statistics
 title: Source Inference
 url_code: ""

@@ -7,9 +7,7 @@ image:
 slides: ""
 summary: "We investigate the possibility for collective behavior of salmon to facilitate navigation of man-made dams along the Columbia river."
 tags:
-- Bootstrap
-- Survival Modeling
-- Reverse Causation
+- Ecology
 title: Collective Behavior During Dam Passage
 url_code: ""
 url_pdf: ""
