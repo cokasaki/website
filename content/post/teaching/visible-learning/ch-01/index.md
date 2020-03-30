@@ -4,7 +4,7 @@ authors:
 categories:
 - Teaching
 - Visible Learning
-- Books
+- Notes
 date: "2020-03-30T00:00:00Z"
 draft: false
 featured: false
@@ -15,7 +15,6 @@ summary: 'My notes on Chapter 1 of Visible Learning'
 tags:
 - Teaching
 - Visible Learning
-- Books
 title: "Why Don\'t students like learning?"
 ---
 

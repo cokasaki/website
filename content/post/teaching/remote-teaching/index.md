@@ -3,6 +3,7 @@ authors:
 - admin
 categories:
 - Teaching
+- Notes
 date: "2020-03-27T00:00:00Z"
 draft: false
 featured: false
