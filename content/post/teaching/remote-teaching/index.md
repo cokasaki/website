@@ -7,7 +7,6 @@ date: "2020-03-27T00:00:00Z"
 draft: false
 featured: false
 image:
-lastmod: "2020-03-27T00:00:00Z"
 projects: []
 subtitle: 
 summary: 'My notes about trying to teach remotely'

@@ -7,7 +7,6 @@ date: "2020-03-24T00:00:00Z"
 draft: false
 featured: false
 image:
-lastmod: "2020-03-24T00:00:00Z"
 projects: []
 subtitle: 'Post 1: Notebook Structure'
 summary: 'Introducing a Virtual Lab Notebook'

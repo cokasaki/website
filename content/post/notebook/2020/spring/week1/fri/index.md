@@ -7,7 +7,6 @@ date: "2020-03-27T00:00:00Z"
 draft: false
 featured: false
 image:
-lastmod: "2020-03-27T00:00:00Z"
 projects: []
 subtitle: 
 summary: 'My daily lab notebook goals post'
@@ -22,3 +21,4 @@ I might be surprise-TAing next quarter, so I'm focusing all my energy on TA prep
 
 ## Reality ##
 
+I did that! I also met with Tim the course instructor to outline my responsibilities as a TA and did some editing on the Dirichlet BC code. 

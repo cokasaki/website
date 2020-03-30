@@ -7,7 +7,6 @@ date: "2020-03-24T00:00:00Z"
 draft: false
 featured: false
 image:
-lastmod: "2020-03-24T00:00:00Z"
 projects: []
 subtitle: 
 summary: 'My weekly lab notebook goals post for week 1 of spring 2020'
