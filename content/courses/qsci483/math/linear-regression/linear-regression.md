@@ -1,22 +1,22 @@
 ---
 date: "2020-03-31T00:00:00+01:00"
 draft: false
-linktitle: Simple Linear Regression
+linktitle: General Model
 menu:
-  qsci493:
-    parent: Math
-    weight: 2
-title: The Math of Simple Linear Regression
+  qsci483:
+    parent: Linear Regression
+    weight: 3
+title: Linear Regression
 toc: true
 type: docs
-weight: 1
+weight: 3
 ---
 
-In this document I will outline the math used in the analysis of a simple linear regression model. Make sure to check out my [notation](/courses/qsci493/notation) document to clarify any confusing notation. 
+In this document I will outline the math used in the analysis of a more general linear regression model, with more than one predictor variable. Make sure to check out my [notation](/courses/qsci483/math/notation) document to clarify any confusing notation, and check out my [simple linear regression](/courses/qsci483/math/linear-regressoin/simple-linear-regression) document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start. 
 
 ## The Model ##
 
-Simple Linear Regression is based upon the equation
+Linear regression is based upon the equation
 $$
 y_i \sim N(X\beta,\sigma^2)
 $$
@@ -40,7 +40,7 @@ f(\hat{\beta})
 & = \sum_{i=1}^n (y_i - x_i\hat{\beta})^2 \\\\
 & = \sum_{i=1}^n \left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2
 \end{align*}
-In matrix notation we can rewrite this, however. The residual \emph{vector} can be written as the $n\times 1$ vector
+In matrix notation we can rewrite this, however. The residual _vector_ can be written as the $n\times 1$ vector
 $$
 r = y - X\hat{\beta}.
 $$
@@ -57,15 +57,14 @@ f(\hat{\beta})
 \end{align*}
 
 #### Optimization ####
-From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to each $\beta_i$, to find the minimum sum of squared residuals (the \emph{least squares}). So let us take the partial derivative with respect to a particular coefficient:
+From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to each $\beta_i$, to find the minimum sum of squared residuals (the _least squares_). So let us take the partial derivative with respect to a particular coefficient:
 \begin{align*}
 \dfrac{\partial f}{ \partial \hat{\beta}_j} 
 & = \dfrac{\partial }{ \partial \hat{\beta}_j} \sum_{i=1}^n \left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2 \\\\
 & = \sum_{i=1}^n \dfrac{\partial }{ \partial \hat{\beta}_j}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2 \\\\
-& = \sum_{i=1}^n 2\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\dfrac{\partial }{ \partial \hat{\beta}_j}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right) \\
+& = \sum_{i=1}^n 2\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\dfrac{\partial }{ \partial \hat{\beta}_j}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right) \\\\
 & = \sum_{i=1}^n 2\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\left(-x_{ij}\right) \\\\
-& = -\sum_{i=1}^n 2x_{ij}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right) \\
-\end{align*}
+& = -\sum_{i=1}^n 2x_{ij}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\end{align*}
 Verify that this can be written in matrix notation as
 \begin{align*}
 \dfrac{\partial f}{ \partial \hat{\beta}_j}

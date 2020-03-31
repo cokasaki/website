@@ -1,10 +1,10 @@
 ---
 date: "2020-03-31T00:00:00Z"
 draft: false
-linktitle: QSCI 493
+linktitle: QSCI 483
 menu:
-  qsci493:
-    name: Regression Analysis for Ecologists
+  qsci483:
+    name: QSCI 483
     weight: 1
 summary: My notes for TAing QSCI 493.
 title: Regression Analysis for Ecologists

@@ -1,10 +1,10 @@
----
+ls---
 date: "2020-03-31T00:00:00+01:00"
 draft: false
 linktitle: Notation
 menu:
-  qsci493:
-    parent: Math
+  qsci483:
+    parent: QSCI 483
     weight: 1
 title: Notation
 toc: true
@@ -18,4 +18,4 @@ In general, I will use an upper case letter for a matrix and a lower case letter
 
 ### Advanced Notation: Matrix Calculus ###
 
-For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on [Wikipedia](https://en.wikipedia.org/wiki/Matrix_calculus) or in the more extensive [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf). 
+For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on [Wikipedia](https://en.wikipedia.org/wiki/Matrix_calculus) or in the more extensive [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf). 
