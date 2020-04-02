@@ -5,11 +5,11 @@ linktitle: Using Diagnostics
 menu:
   qsci483:
     parent: Linear Regression
-    weight: 5
+    weight: 7
 title: Using Model Diagnostics
 toc: true
 type: docs
-weight: 5
+weight: 7
 ---
 
 In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on [notation](/courses/qsci483/notation) and [linear regression](/courses/qsci483/linear-regression/linear-regression) before diving in. 

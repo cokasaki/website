@@ -91,3 +91,47 @@ We can derive this same equation in fewer steps using the more complex matrix ca
 & = -2(X'y - X'X\hat{\beta})' \\\\
 & = 0.
 \end{align*}
+
+### Important Quantities
+
+Now we have shown that the ordinary least squares estimator for $\beta$ is $(X'X)^{-1}X'y$. Using this we may calculate all sorts of other things.
+
+#### Predicted Values ####
+The predicted values are
+\begin{align*}
+\hat{y}
+& = X\hat{\beta} \\\\
+& = X(X'X)^{-1}X'y \\\\
+& = Hy.
+\end{align*}
+Here we have defined the "hat matrix," $H = X(X'X)^{-1}X'$. This is a useful matrix in linear regression, which maps the data to its predicted values. This is sometimes also called the projection matrix $P$, since it projects the data onto a lower-dimensional linear space. It is sometimes also called the influence matrix. It has two nice properties which we will use in a moment: it is symmetric and idempotent. This means $H'=H$ and $H^2 = H'H = H$. We can see this by calculating:
+\begin{align*}
+H' & = (X(X'X)^{-1}X')' \\\\
+& = X(X'X)^{-1}X' \\\\
+& = H \\\\
+H^2 & = (X(X'X)^{-1}X')(X(X'X)^{-1}X') \\\\
+& = X(X'X)^{-1}(X'X)(X'X)^{-1}X' \\\\
+& = X(X'X)^{-1}X' \\\\
+& = H
+\end{align*}
+
+#### Residuals ####
+The residuals are
+\begin{align*}
+\hat{\epsilon}
+& = y-\hat{y} \\\\
+& = y-Hy \\\\
+& = (I-H)y \\\\
+& = (I-X(X'X)^{-1}X')y \\\\
+& = My
+\end{align*}
+Here we have defined the "residual maker" matrix, which can also be called the residual operator. This matrix takes the data and gives you the residuals of the model. It also inherits symmetry and idempotency from the hat matrix, since:
+\begin{align*}
+M' & = (I-H)' \\\\
+   & = I-H \\\\
+M^2 & = (I-H)(I-H) \\\\
+& = I - 2H + H^2 \\\\
+& = I - 2H + H \\\\
+& = I-H
+\end{align*}
+With all of this put together we now have the tools to analyze the [residual standard error](../standard-error). First, however, we will analyze the properties of $\hat{\beta}$. 

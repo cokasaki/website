@@ -5,11 +5,11 @@ linktitle: Properties
 menu:
   qsci483:
     parent: Linear Regression
-    weight: 4
+    weight: 5
 title: Properties of Linear Regression
 toc: true
 type: docs
-weight: 4
+weight: 5
 ---
 
 In this document I will outline the math used to analyze our previous results for linear regression analysis. Make sure to check out my previous posts on [notation](/courses/qsci483/notation) and [simple linear regression](/courses/qsci483/linear-regression/linear-regression) before diving in. 
