@@ -1,0 +1,36 @@
+---
+date: "2020-04-01T00:00:00+01:00"
+draft: false
+linktitle: Dirichlet BCs
+menu:
+  gaussian-processes:
+    parent: SPDEs
+    weight: 5
+title: Dirichlet BCs
+toc: true
+type: docs
+weight: 5
+---
+
+The simplest version of the finite element method is said to have "natural" Neumann boundary conditions, meaning that Neumann boundary conditions are naturally satisfied without imposing any additional structure. Dirichlet boundary conditions then are said to be "essential," meaning they must be explicitly imposed after the fact. Certain FEM formulations change up this Neumann=natural, Dirichlet=essential default but for our purposes we will treat these terms as interchangeable.
+
+Now, suppose that we are confronted with the FEM equation $$\begin{bmatrix} K_{11} & K_{12} \\\\ K_{21} & K_{22} \end{bmatrix}\begin{bmatrix} u_1 \\\\ u_2\end{bmatrix} = \begin{bmatrix} L_{11} & L_{12} \\\\ L_{21} & L_{22} \end{bmatrix} \begin{bmatrix} f_1 \\\\ f_2 \end{bmatrix},$$
+with the Dirichlet BC $u_2 = u^*$. We can modify our FEM equation to enforce this, to $$\begin{bmatrix} K_{11} & K_{12} \\\\ 0 & I \end{bmatrix}\begin{bmatrix} u_1 \\\\ u_2\end{bmatrix} = \begin{bmatrix} L_{11}f_1 + L_{12}f_2 \\\\ u^* \end{bmatrix}.$$ We can simplify this to an equation for $u$ by inverting the matrix on the left: $$\begin{bmatrix} u_1 \\\\ u_2 \end{bmatrix} = \begin{bmatrix} K_{11}^{-1} & -K_{11}^{-1}K_{12} \\\\ 0 & I \end{bmatrix} \begin{bmatrix} L_{11}f_1 + L_{12}f_2 \\\\ u^* \end{bmatrix}$$
+Now, assuming that $f\sim N(\mu_f,Q_f)$ and $u^*$ is given (often $u^* = 0$) we obtain the following distribution for $u_1$:
+\begin{align*}
+u_1 & = K_{11}^{-1}L_1f - K_{11}^{-1}K_{12}u^* \\\\
+u_1 & \sim N\left(K_{11}^{-1}(L_1\mu_f - K_{12}u^*), K_{11}^{-1}L_1\Sigma_fL_1^TK_{11}^{-T}\right).
+\end{align*}
+
+Now often we are interested in the posterior distribution for $u$ and/or $f$. Since we have assumed that $u^\*$ is given the two are deterministically related. However, $u$ is of lower dimension than $f$. So, we will calculate the posterior distribution of $f$ since this can be used to calculate the posterior of $u$ but not vice versa. We will assume that we have made some observations $y = y\_1 + y\_2 = A\_1u\_1 + A\_2u\_2 + \epsilon$ of $u$ from which we wish to make inference. Since $u^\*$ is known we essentially have observations:
+\begin{align*}
+y & = A_1K_{11}^{-1}(L_1f - K_{12}u^\*) + A_2u^\* + \epsilon \\\\
+  & = A_1K^{11}^{-1}L_1f + (A_2-A_1K_{11}^{-1}K_{12})u^\* \\\\
+  & = y_f + y^\* + \epsilon
+\end{align*}
+Using the [results](../posteriors/#linear-observations) for a posterior from a linearly-observed MVN distribution we see that:
+\begin{align*}
+[f|y=a] & = N\left(\mu_f + Q_{f|y}^{-1}B^TQ_{\epsilon}(y - y^* - B^T\mu_f), Q_{f|y}^{-1}\right) \\\\
+Q_{f|y} & = (Q + B^TQ_{\epsilon}B) \\\\
+B & = A_1K_{11}^{-1}L_1
+\end{align*}

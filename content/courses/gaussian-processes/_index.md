@@ -1,0 +1,16 @@
+---
+date: "2020-03-31T00:00:00Z"
+draft: false
+linktitle: Gaussian Processes
+menu:
+  gaussian-processes:
+    name: Gaussian Processes
+    weight: 1
+summary: My notes for the analyses of Gaussian Process models.
+title: Gaussian Processes
+toc: true
+type: docs
+weight: 1
+---
+
+Over the course of my research I frequently encounter the same problems involving Gaussian Processes. In this page I will record the results of these analyses so as to avoid redoing them do frequently. 

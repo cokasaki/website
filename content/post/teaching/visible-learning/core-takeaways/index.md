@@ -18,7 +18,7 @@ tags:
 title: "Broad Strokes of Learning"
 ---
 
-Nine basic principles:
+## Nine basic principles ##
 1. Explanations of human learning in terms of innate talent are consistently undermined by research which states that substantial amounts of time, energy, instruction, and effort are required to develop mastery of any subject area.
 2. We can naturally learn from any information, but to learn effectively that information has to be organized in a way that matches how our minds are organized. Minds are organized differently for different people, and even change as we age.
 3. The brain has severe, inherent limitations and deep processing becomes impossible when those limits are reached (cognitive load principle)
@@ -29,17 +29,28 @@ Nine basic principles:
 8. Humans are fundamentally social, down to the neurological level. This sociality can be used as a tool (social brain hypothesis)
 9. Ideas about learning that are contradicted by scientific evidence abound. Many of these ideas can be harmful.
 
-Section 1
+## Section 1 ##
 - The mind may not be "designed for thinking" and requires time and effort to think
 - Teachers need to recognize how difficult tasks are for beginners. Focus should be not on material but on the actual process of moving from not knowing to knowing. To do this students need a safe environment to acknowledge they don\'t understand. We can only holld so much in our cognitive centers, so it is important to ``overlearn'' basic concepts until it is ingrained and automatic
 
-Section 2
+### Chapter 1 ###
+- Students do not dislike school, but tolerate it.
+- The brain may not be "designed" for abstract thinking and as a result school is a taxing process.
+- Thinking requires a large investment of resources for an uncertain outcome (understanding) and risk-averse humans prefer to invest these resources in crossing seemingly achievable "knowledge gaps" rather than "knowledge chasms"
+
+### Chapter 2 ###
+- Experts may be "worse" at teaching than novices. The "expert blind spot effect" explains this:
+  - experts forget how difficult it was to learn something in the first place
+  - there is a gap between the advanced level on which experts conceptualize of a topic and the short-term learning needs of students
+  - however, this abstract thinking may help students transfer their learning to related areas. 
+
+## Section 2 ##
 - Major ideas about acquisition, memory retention, mental storage, and overload
 - Learning need not be conscious, we can only think about so much at once
 - We need to develop a vocabulary for learning, and need multiple strategies for learning
 - Challenges: learning styles (i.e. spatial, verbal, kinaesthetic), Mozart effects, multitasking, digital natives, and whether the Internet is really changing how we think
 
-Section 3
+## Section 3 ##
 - Self-esteem follows success more often than predicting it
 - Building confidence is still important though: in order to maintain positive views of ourselves we build explanations (I cannot; rather than I did not work hard enough) that help our self esteem but hurt our learning
 - Learning situations are often distracting and knowing how to pay attention to learning is important, but tiring. It is important to know when to stop thinking to save cognitive resources. 

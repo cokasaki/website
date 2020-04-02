@@ -1,0 +1,42 @@
+---
+date: "2020-03-31T00:00:00+01:00"
+draft: false
+linktitle: Posteriors
+menu:
+  gaussian-processes:
+    parent: Properties
+    weight: 5
+title: Posteriors
+toc: true
+type: docs
+weight: 5
+---
+
+The multivariate normal distribution has nicely behaved posterior distributions. In particular, the posterior given an observation of the vector is also multivariate normal.
+
+## Basic Posterior ##
+
+Let $x$ be an $n\times 1$ vector partitioned into $x = (x_1,x_2)$, with $x_1$ having dimension $k$ and $x_2$ having dimension $n-k$. Partition the mean $\mu = (\mu_1,\mu_2)$ and covariance matrix $$\Sigma = \begin{bmatrix} \Sigma_{11} & \Sigma_{12} \\\\ \Sigma_{21} & \Sigma_{22} \end{bmatrix}.$$ Then the posterior distribution for $x_1$ given $x_2=a$ is given by
+\begin{align*}
+[x_1|x_2=a]
+& = N\left(\mu_1 + \Sigma_{12}\Sigma_{22}^{-1}(a-\mu_2), \Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}\right).
+\end{align*}
+
+## Precision Formulation
+
+Often in my research we are interested in analyzing a MVN distribution with known sparse _precision_ matrix. It is expensive to invert matrices and cheap to work with sparse matrices so we wish to work directly with this precision matrix. Furthermore, we want to calculate the precision matrix for our posterior because it is likely to also be computational advantageous. Let the precision matrix be partitioned
+$$Q = \begin{bmatrix} Q_{11} & Q_{12} \\\\ Q_{21} & Q_{22} \end{bmatrix}.$$
+Then the equivalent posterior distribution is
+\begin{align*}
+[x_1|x_2=a]
+& = N\left(\mu_1 + Q_{11}^{-1}Q_{12}(a-\mu_2),Q_{11}\right).
+\end{align*}
+Furthermore, let $RR^T = Q$ be the Cholesky decomposition of $Q$ also be partitioned into blocks. If $Q$ is sparse then under mild conditions, $R$ is also sparse and we can work with it to do quick computation. The posterior distribution now is $$[x_1|x_2=a] = N\left(\mu_1 - R_{11}^{-1}(R_{11}^{-T}(Q_{12}(a-\mu_2))), Q_{11}\right).$$
+
+## Linear Observations
+
+Often we are also interested in analyzing a MVN distribution where we observe not the individual components, but a linear combination thereof $y = Ax + \epsilon$ with some mean-zero MVN noise vector $\epsilon$. Then the observations are distributed $y|x \sim N( Ax , Q_\epsilon^{-1} )$. The posterior $x|y$ is given by:
+\begin{align*}
+[x|y=a] & = N\left(\mu_x + Q_{x|y}^{-1}A^TQ_{\epsilon}(y-A\mu_x), Q_{x|y}\right) \\\\
+Q_{x|y} & = (Q + A^TQ_{\epsilon}A)^{-1}
+\end{align*}

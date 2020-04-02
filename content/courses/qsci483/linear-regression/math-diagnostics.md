@@ -1,0 +1,44 @@
+---
+date: "2020-03-31T00:00:00+01:00"
+draft: false
+linktitle: Model Diagnostics
+menu:
+  qsci483:
+    parent: Linear Regression
+    weight: 5
+title: Linear Regression Model Diagnostics
+toc: true
+type: docs
+weight: 5
+---
+
+In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on [notation](/courses/qsci483/notation) and [linear regression](/courses/qsci483/linear-regression/linear-regression) before diving in. 
+
+## The Model ##
+
+Recall that linear regression is based upon the equation:
+$$
+y_i \sim N(X\beta,\sigma^2)
+$$
+or equivalently 
+\begin{align*}
+y_i & \sim X\beta + \epsilon_i \\\\
+\epsilon_i & \sim N(0,\sigma^2)
+\end{align*}
+where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X'X)^{-1}X'y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X'X)^{-1}$.
+
+The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\sqrt{\mbox{var}(\hat{\beta}_i)}$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).
+
+Multiple vs. adjusted $R^2$
+Different page for estimating $\sigma^2$
+More on t-tests
+F-test for whole model
+Stundentized residuals ($t$ vs. standardized $N(0,1)$)
+DFFITS
+Cook's distance ($F$-distribution)
+Skewness
+Kurtosis
+Leverage
+ANOVA
+Shapiro-wilks test
+ncV test
