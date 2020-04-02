@@ -34,18 +34,18 @@ X'MX
 & = X'X - X'X \\\\
 & = 0
 \end{align*}
-so that the first term drops out. At this point we could either do a lot of algebra or we could make use of a convenient statistical property (we will do the latter). The expectation of a _quadratic form_ (i.e. $v'Mv$ for some random vector $v$ and constant matrix $M$) can be written as $$E[v'Mv] = \tr[M\Sigma] + \mu^TM\mu$$ where $\mu$ is the mean of $v$ and $\Sigma$ the covariance of $v$. Using this property we find that
+so that the first term drops out. At this point we could either do a lot of algebra or we could make use of a convenient statistical property (we will do the latter). The expectation of a _quadratic form_ (i.e. $v'Mv$ for some random vector $v$ and constant matrix $M$) can be written as $$E[v'Mv] = \mbox{tr}[M\Sigma] + \mu^TM\mu$$ where $\mu$ is the mean of $v$ and $\Sigma$ the covariance of $v$. Using this property we find that
 \begin{align*}
-E[\hat{\sigma^2}]
+E[\hat{\sigma}^2]
 & = \frac{1}{n-k}E[\epsilon'M\epsilon] \\\\
-& = \frac{1}{n-k}\tr[M\Sigma(\epsilon)] \\\\
-& = \frac{1}{n-k}\tr[\sigma^2M] \\\\
-& = \frac{\sigma^2}{n-k}\tr[I-H].
+& = \frac{1}{n-k}\mbox{tr}[M\Sigma(\epsilon)] \\\\
+& = \frac{1}{n-k}\mbox{tr}[\sigma^2M] \\\\
+& = \frac{\sigma^2}{n-k}\mbox{tr}[I-H].
 \end{align*}
-Now, so long as $X$ is full rank (i.e. there are no redundant predictors) the hat matrix has trace $k$. This can be shown using complicated eigenvalue proofs that you can find on Google. Thus $\tr[I-H] = \tr[I]-\tr[H] = n-k$. Thus indeed the $n-k$ term drops out and we find that $\hat{\sigma^2}$ is an unbiased estimator of the true residual variance.
+Now, so long as $X$ is full rank (i.e. there are no redundant predictors) the hat matrix has trace $k$. This can be shown using complicated eigenvalue proofs that you can find on Google. Thus $\mbox{tr}[I-H] = \mbox{tr}[I]-\mbox{tr}[H] = n-k$. Thus indeed the $n-k$ term drops out and we find that $\hat{\sigma}^2$ is an unbiased estimator of the true residual variance.
 
 ### Distribution ###
-In fact, we have done more than show it is unbiased. Much of the algebra that we did actually did not depend on the outer expectation. We actually showed more generally that $$\hat{\sigma^2} = \frac{1}{n-k}\epsilon'M\epsilon.$$ This is useful because it is a _quadratic form_, as we described above. Quadratic forms over multivariate normal random vectors have nice properties which we will now derive. Specifically we will show that: $$\hat{\sigma^2} \sim \frac{\sigma^2}{n-k}\chi^2_{n-k}.$$
+In fact, we have done more than show it is unbiased. Much of the algebra that we did actually did not depend on the outer expectation. We actually showed more generally that $$\hat{\sigma}^2 = \frac{1}{n-k}\epsilon'M\epsilon.$$ This is useful because it is a _quadratic form_, as we described above. Quadratic forms over multivariate normal random vectors have nice properties which we will now derive. Specifically we will show that: $$\hat{\sigma}^2 \sim \frac{\sigma^2}{n-k}\chi^2_{n-k}.$$
 
 This proof will involve some additional use of linear algebraic terms and assumptions. Specifically, we will use the fact that a symmetric matrix $A$ can be decomposed into $A = PDP^T$ for an _orthogonal_ (i.e. $P^2 = I$) matrix $P$ and a diagonal matrix $D$. Orthogonal matrices are nice because $\tilde{z} = Pz$, the product of an orthogonal matrix with a standard normal vector, is still a standard normal vector.
 
@@ -57,5 +57,5 @@ We will also use the fact that if $A$ is symmetric _and_ idempotent then all the
 & = \sigma^2 \tilde{z}'D\tilde{z} \\\\
 & = \sigma^2 \sum_{i=1}^n D_{ii}\tilde{z}_i^2 \\\\
 & = \sigma^2 \sum_{i=1}^{n-k} \tilde{z}_i^2 \\\\
-& = \sim \sigma^2 \chi^2_{n-k}.
+& \sim \sigma^2 \chi^2_{n-k}.
 \end{align*}

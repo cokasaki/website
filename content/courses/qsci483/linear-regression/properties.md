@@ -144,4 +144,26 @@ Finally, plugging this in, we can find that
 & = \beta\beta' + \sigma^2(X'X)^{-1} - \beta\beta' \\\\
 & = \sigma^2(X'X)^{-1}.
 \end{align*}
-This is the covariance matrix of $\hat{\beta}$! Notably, this has two important properties. One, it depends on $\sigma^2$, so if we want to use this we had better estimate $\sigma^2$ somehow. More on this in the next section. Two, it depends on the _inverse_ of $X'X$. There's no guarantee that this matrix is invertible. For example, if we have more predictors than we have data points (i.e. $k > n$) this matrix will certainly _not_ be invertible. You may have been warned about this scenario in the past. However, even if you have many data points, other situations can crop up where $X'X$ is either numerically difficult to invert (i.e. difficult to calculate on a computer), or produces very large variances. One such case is where two of the predictor variables are very highly correlated. More on this later. 
+This is the covariance matrix of $\hat{\beta}$! Notably, this has two important properties. One, it depends on $\sigma^2$, so if we want to use this we had better estimate $\sigma^2$ somehow. More on this in the next section. Two, it depends on the _inverse_ of $X'X$. There's no guarantee that this matrix is invertible. For example, if we have more predictors than we have data points (i.e. $k > n$) this matrix will certainly _not_ be invertible. You may have been warned about this scenario in the past. However, even if you have many data points, other situations can crop up where $X'X$ is either numerically difficult to invert (i.e. difficult to calculate on a computer), or produces very large variances. One such case is where two of the predictor variables are very highly correlated. More on this later.
+
+### Other Quantities ###
+
+Here we will show briefly that $\hat{y}$ is also unbiased (assuming the model is correct). This can be seen by some matrix calculations:
+\begin{align*}
+E[\hat{y}]
+& = E[Hy] \\\\
+& = E[X(X'X)^{-1}X'(X\beta+\epsilon)] \\\\
+& = E[X\beta + H\epsilon] \\\\
+& = X\beta + HE[\epsilon] \\\\
+& = X\beta.
+\end{align*}
+Meanwhile, $\hat{\epsilon}$ is:
+\begin{align*}
+\hat{\epsilon}
+& = My \\\\
+& = (I-H)y \\\\
+& = y - (X\beta + H\epsilon) \\\\
+& = (I-H)\epsilon \\\\
+& = M\epsilon
+\end{align*}
+This is unbiased in the sense that it has the same mean as $\epsilon$. Unfortunately, although it might seem we can simply calculate $\epsilon = M^{-1}\hat{\epsilon}$, this matrix may not be invertible (TODO: I'm like 99% certain it is always uninvertible)
