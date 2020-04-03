@@ -9,7 +9,7 @@ featured: false
 image:
 projects: []
 subtitle: 
-summary: 'My weekly lab notebook goals post for week 1 of spring 2020'
+summary: 'My weekly lab notebook goals post for week 2 of spring 2020'
 tags:
 - Notebook
 title: 'Lab Notebook: Sp20 Week 2'

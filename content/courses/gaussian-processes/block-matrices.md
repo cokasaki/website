@@ -33,7 +33,7 @@ C & D
 \end{bmatrix}$$
 - $$\mbox{det}
 \begin{pmatrix}
-A & B \\
+A & B \\\\
 C & D
 \end{pmatrix}
 =
