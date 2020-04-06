@@ -1,0 +1,35 @@
+---
+authors:
+- admin
+categories:
+- Notebook
+date: "2020-04-02T00:00:00Z"
+draft: false
+featured: false
+image:
+projects: []
+subtitle: 
+summary: 'My daily lab notebook goals post'
+tags:
+- Notebook
+title: 'Lab Notebook: 4/2'
+---
+
+## Goals ##
+
+Morning: 9-12:30
+- Look at QSCI stuff
+
+Afternoon: 1:30-3:30
+- Computer lab
+
+Afternoon: 3:30-5
+- Work on Dirichlet BC code
+
+## Reality ##
+
+Made some good progress on remembering how all the [model diagnostics](/courses/qsci-483/linear-algebra/math-diagnostics) work. Taking this as an opportunity to go beyond what the course really calls for and cement my understanding of these things because they're important to know.
+
+Lab went well.
+
+Dirichlet BC stuff is chugging along. I definitely did something wrong last time, I think, because I'm running into new challenges. Good that I'm reimplementing it. I think I have figured out how to deal with these challenges (i.e. get sparse posterior $Q_u$ and then sample from $f$ as a degenerate MVN conditional on $u$. 

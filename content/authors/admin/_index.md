@@ -16,7 +16,7 @@ name: Colin Okasaki
 organizations:
 - name: University of Washington
   url: "www.washington.edu"
-role: Graduate Student
+role: PhD Student
 social:
 - icon: envelope
   icon_pack: fas
@@ -33,4 +33,4 @@ user_groups:
 - Visitors
 ---
 
-Colin Okasaki is a graduate student in Quantitative Ecology and Resource Management at the University of Washington. He is advised by Andrew Berdahl in the School of Aquatic and Fishery Sciences. His research interests include bridging the gaps between mechanistic modeling, spatial statistics, and constrained optimization. 
+I am a third-year PhD student in Quantitative Ecology and Resource Management at the University of Washington. I am advised by Andrew Berdahl in the School of Aquatic and Fishery Sciences. I am collaborating with S&aacute;ndor Toth from the School of Environmental and Forestry Sciences on a project looking at optimal spatial sampling design under logistical constraints. I am also collaborating with Mevin Hooten from Colorado State University on a project looking at physics-based spatiotemporal statistics. My general research interests include bridging the gaps between mechanistic modeling, spatial statistics, and constrained optimization. I am particularly interested in taking mathematically complex methods and ideas and making them more accessible and useful to ecologists. 

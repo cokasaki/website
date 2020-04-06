@@ -193,4 +193,5 @@ The coefficients $a_i$ are obtained as the vector $\frac{V^{-1}m}{C}$ where $m$ 
 
 ## Heteroskedasticity ##
 
-The most common way of testing for heteroskedaticity is the Breusch-Pagan test (implemented in R as ncv.test). This tests whether the variance of the residuals is dependent on the values of the predictors. (TODO)
+The most common way of testing for heteroskedaticity is the Breusch-Pagan test (implemented in R as ncv.test). This tests whether the variance of the residuals is dependent on the values of the predictors. This tests works by conducting regression as ordinary and calculating the residuals $\hat{\epsilon}$. Then we consider the possibility that the square of the residuals $\hat{\epsilon}^2$ depends upon the predictors. We test this by fitting a new linear model: $$\hat{\epsilon}^2 = X\gamma + \eta.$$
+The test statistic is $nR^2$ where $R^2$ is the coefficient of determination for the second model. Under the null hypothesis that the predictors have no effect. this test statistic is distributed $\chi^2_{k-1}$. (TODO: why?)
