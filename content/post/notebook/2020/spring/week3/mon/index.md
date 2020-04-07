@@ -29,3 +29,7 @@ Afternoon: 1:30-3:30
 
 Afternoon: 3:30-5
 - Look at bypass responses
+
+## Reality ##
+
+Morning stuff went well but I fell into administrative tasks and did not get the code done. I did email my committee, email with Erica about my TAing position, and email with the stats department about the concurrent master's program. I took a brief look at Mevin's response in the afternoon. 

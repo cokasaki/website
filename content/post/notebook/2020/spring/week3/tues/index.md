@@ -4,7 +4,7 @@ authors:
 categories:
 - Notebook
 date: "2020-04-07T00:00:00Z"
-draft: true
+draft: false
 featured: false
 image:
 projects: []
@@ -12,25 +12,24 @@ subtitle:
 summary: 'My daily lab notebook goals post'
 tags:
 - Notebook
-title: 'Lab Notebook: 4/07'
+title: 'Lab Notebook: 4/7'
 ---
 
 ## Goals ##
 
 Morning: 9-12
-- Look over the rest of QSCI HW 1
+- Work on Dirichlet BC code
 
 Afternoon: 1-1:30
-- Take notes from Visible Learning Chapter 1
+- Read Visible Learning Chapter 3
 
 Afternoon: 1:30-3:30
 - Hold office hours
-- When no one shows up finish up looking at QSCI HW 1
-- Then read Visible Learning Chapter 2
+- Take notes on VL Ch 3 and read VL Ch 4
 
 Afternoon: 3:30-5
-- Work on Dirichlet BC code
+- Email S&aacute;ndor
 
 ## Reality ##
 
-Didn't make it through the whole thing, had to look up some of the model diagnostics Tim is using, but did get through VL Ch 1 and 2. Struggled with website formatting in the afternoon. 
+Got side tracked with adminstrative stuff again. Evidently I have to formally apply to the concurrent MS program in the stats department so that will take up much of my week. I did get the Dirichlet code up and running although there are probably a few lingering bugs. MCMC run is going now. Did not get to VL or emailing S&aacute;ndor, although I actually looked at his email and there is not too much to respond to directly. I do owe him an update soon though. 
