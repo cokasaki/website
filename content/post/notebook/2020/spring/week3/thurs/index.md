@@ -4,7 +4,7 @@ authors:
 categories:
 - Notebook
 date: "2020-04-09T00:00:00Z"
-draft: true
+draft: false
 featured: false
 image:
 projects: []
@@ -18,18 +18,14 @@ title: 'Lab Notebook: 4/9'
 ## Goals ##
 
 Morning: 9-12:30
-- Look at QSCI stuff
+- Make edits to animal movement modeling section
 
 Afternoon: 1:30-3:30
 - Computer lab
 
-Afternoon: 3:30-5
-- Work on Dirichlet BC code
+Afternoon: 3:30-4:30
+- Meet with Tyler
 
 ## Reality ##
 
-Made some good progress on remembering how all the [model diagnostics](/courses/qsci-483/linear-algebra/math-diagnostics) work. Taking this as an opportunity to go beyond what the course really calls for and cement my understanding of these things because they're important to know.
-
-Lab went well.
-
-Dirichlet BC stuff is chugging along. I definitely did something wrong last time, I think, because I'm running into new challenges. Good that I'm reimplementing it. I think I have figured out how to deal with these challenges (i.e. get sparse posterior $Q_u$ and then sample from $f$ as a degenerate MVN conditional on $u$. 
+Did these things! Was hoping to finish the animal movement section but it didn't quite happen. Gotta make some decisions about presenting IOU vs OUF results. 
