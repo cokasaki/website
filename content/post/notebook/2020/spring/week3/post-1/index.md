@@ -25,3 +25,9 @@ I would like to spend this week doing a mix of: finishing up the Dirichlet code 
 - Debug animal movement code and get it run at least once by Thursday
 - Respond to S&aacute;ndor's email by Tuesday
 - Read two of Mevin's suggested papers by Wednesday, the rest by Friday
+
+## Reality ##
+- Finished up the Dirichlet BC code
+- Read but have not yet taken notes on VL Chs 3 and 4
+- Ran the animal movement code many times, but still debugging
+- Still need to get back to Mevin and S&aacute;ndor with updates. 
