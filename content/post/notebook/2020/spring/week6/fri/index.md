@@ -3,8 +3,8 @@ authors:
 - admin
 categories:
 - Notebook
-date: "2020-04-24T00:00:00Z"
-draft: false
+date: "2020-05-01T00:00:00Z"
+draft: true
 featured: false
 image:
 projects: []
@@ -12,7 +12,7 @@ subtitle:
 summary: 'My daily lab notebook goals post'
 tags:
 - Notebook
-title: 'Lab Notebook: 4/24'
+title: 'Lab Notebook: 5/1'
 ---
 
 ## Goals ##
