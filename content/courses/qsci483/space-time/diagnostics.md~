@@ -1,0 +1,26 @@
+---
+date: "2020-04-27T00:00:00+01:00"
+draft: false
+linktitle: Descriptive Statistics
+menu:
+  qsci483:
+    parent: Point Processes
+    weight: 3
+title: Descriptive Statistics
+toc: true
+type: docs
+weight: 3
+---
+
+In this section I will outline the descriptive statistics that are used to diagnose point process deviations from homogeneity. A standard assumption in the analysis of point processes is that equal areas should have equal densities of points. However, this assumption is often violated. We can diagnose such violations using descriptive statistics such as Ripley's \(K\) and \(L\) functions.
+
+### Ripley's \(K\) function ###
+
+This function is defined as
+
+\(
+\hat{K}(t) = \frac{A}{n}\sum_{i\neq j} \frac{I(d_{ij} < t)}{n}.
+\)
+
+Here $A$ is the total area in question, $n$ is the total number of points
+This can be thought of as the fraction of all pairs which are within $t$ units of distance from each other. 

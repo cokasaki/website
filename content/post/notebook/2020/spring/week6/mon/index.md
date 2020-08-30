@@ -34,3 +34,5 @@ Afternoon: 3:30-5
 - Find Neotoma dataset
 
 ## Reality ##
+
+Responded to all my emails. Got the code running for the pilot study/optimization integration, but it's been a while since I looked at the optimization code. It runs but slowly and I don't entirely remember how to fix it. Did not end up finding Neotoma dataset, instead I ended up working on SSN stuff that I didn't finish yesterday, and in particular I learned how Cholesky sparse up-looking updates work. 

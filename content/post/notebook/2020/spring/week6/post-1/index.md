@@ -24,3 +24,7 @@ title: 'Lab Notebook: Sp20 Week 6'
 - Write up the SSN scratch paper before I forget it all
 
 ## Reality ##
+- Got access to Neotoma although it is much more complex than I feared
+- No progress on trade winds
+- End-to-end pilot study procedure is working, but haven't incorporated spatially balanced yet
+- Keeping up to speed on QSCI

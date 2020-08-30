@@ -3,7 +3,7 @@ authors:
 - admin
 categories:
 - Notebook
-date: "2020-04-30T00:00:00Z"
+date: "2020-05-07T00:00:00Z"
 draft: false
 featured: false
 image:
@@ -12,7 +12,7 @@ subtitle:
 summary: 'My daily lab notebook goals post'
 tags:
 - Notebook
-title: 'Lab Notebook: 4/30'
+title: 'Lab Notebook: 5/7'
 ---
 
 ## Goals ##
