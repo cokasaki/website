@@ -10,7 +10,7 @@ tags:
 - Ecology
 title: Collective Behavior During Dam Passage
 url_code: "https://doi.org/10.6084/m9.figshare.13010072"
-url_pdf: "static/dam-passage.pdf"
+url_pdf: "publications/dam-passage.pdf"
 url_slides: ""
 url_video: ""
 ---
