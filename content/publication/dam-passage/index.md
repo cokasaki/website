@@ -5,7 +5,7 @@ authors:
 - Matthew L. Keefer
 - Peter A. H. Westley
 - Andrew M. Berdahl
-date: "2020-09-26T00:00:00Z"
+date: "2020-10-21T00:00:00Z"
 doi: "https://doi.org/10.1098/rspb.2020.2137"
 featured: true
 image:
@@ -14,7 +14,7 @@ publication: "Proceedings of the Royal Society B"
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "2020-09-26T00:00:00Z"
+publishDate: "2020-10-21T00:00:00Z"
 slides: ""
 summary: "Scientists have long theorized that social behavior helps animals navigate during long, difficult migrations. We studied Pacific salmon behavior at dams, where they must locate and climb challenging 'fish ladders' before making it home to breed. The prevailing wisdom is that overcrowding is the dominant social effect at fish ladders. However, we found strong evidence that Chinook salmon (but surprisingly not the more social sockeye) actually benefit from sociality during this process."
 tags:
@@ -22,20 +22,10 @@ tags:
 title: "Collective navigation can facilitate passage through human-made barriers by homeward migrating Pacific salmon"
 url_code: "https://doi.org/10.6084/m9.figshare.13010072"
 url_dataset: "https://doi.org/10.6084/m9.figshare.13010072"
-url_pdf: "publication/dam-passage.pdf"
+url_pdf: "publications/dam-passage.pdf"
 url_poster: ""
 url_project: ""
 url_slides: ""
 url_source: ""
 url_video: ""
 ---
-
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /alert %}}
-
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
-
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
