@@ -5,7 +5,7 @@ image:
   caption: Photo by rawpixel on Unsplash
   focal_point: Smart
 slides: ""
-summary: "We investigated the possibility for collective behavior of salmon to facilitate navigation of man-made dams along the Columbia river. We found that Chinook salmon may benefit from sociality, while the paradoxically more social sockeye salmon does not, and hypothesize as to why this may be."
+summary: "We investigated the possibility for collective behavior of salmon to facilitate navigation of man-made dams along the Columbia river. We found that Chinook salmon may benefit from sociality, while paradoxically the more social sockeye salmon does not, and hypothesize as to why this may be."
 tags:
 - Ecology
 title: Collective Behavior During Dam Passage

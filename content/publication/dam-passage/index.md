@@ -10,7 +10,7 @@ doi: "https://doi.org/10.1098/rspb.2020.2137"
 featured: true
 image:
 projects: []
-publication: "Proceedings of the Royal Academy of Sciences B"
+publication: "Proceedings of the Royal Society B"
 publication_short: ""
 publication_types:
 - "2"
