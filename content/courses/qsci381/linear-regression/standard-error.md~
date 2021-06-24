@@ -1,0 +1,61 @@
+---
+date: "2020-04-02T00:00:00+01:00"
+draft: false
+linktitle: Standard Error
+menu:
+  qsci483:
+    parent: Linear Regression
+    weight: 4
+title: The Residual Standard Error
+toc: true
+type: docs
+weight: 4
+---
+
+A standard error is the estimated standard deviation $\hat{\sigma}$ for some variable. The residual standard error for linear regression is our estimate of the standard deviation of the noise $\epsilon$. Recall that we assume the noise is independent and heteroskedastic. This is important since it means we only need to estimate one single parameter for all of the noise variables.
+
+We estimate the residual variance using the equation $$\hat{\sigma}^2 = \frac{1}{n-k}\sum \hat{\epsilon}_i^2.$$ You can think of the $n-k$ term as accounting for the fact that we have estimated $k$ parameters before making this estimate. Recall that we fit our model by minimizing the sum of squared residuals. So we've actually optimized this model to minimize exactly $\sum \hat{\epsilon}_i^2$. The more parameters we have to work with the better that optimization will be. So we would probably get an answer that was too small if we just calculated the mean $$\frac{1}{n}\sum \hat{\epsilon}_i^2.$$ Dividing by a smaller number $n-k$ accounts for this, making $\hat{\sigma}^2$ an unbiased estimator of the residual variance.
+
+### Unbiasedness ###
+We can see why this is by calculating the expectation of $\hat{\sigma}^2$. We won't even both trying to avoid matrices in this derivation:
+\begin{align*}
+E[\hat{\sigma}^2]
+& = E\left[\frac{1}{n-k}\hat{\epsilon}'\hat{\epsilon}\right] \\\\
+& = \frac{1}{n-k} E[y'M'My] \\\\
+& = \frac{1}{n-k} E[y'My] \\\\
+& = \frac{1}{n-k} E[(X\beta + \epsilon)'M(X\beta+\epsilon)] \\\\
+& = \frac{1}{n-k} \left( E[\beta'X'MX\beta] + E[\epsilon'M\epsilon] \right)
+\end{align*}
+where we have eliminated the cross terms since $E[\epsilon]=0$. Now we can calculate
+\begin{align*}
+X'MX
+& = X'(I-H)X \\\\
+& = X'X - X'(X(X'X)^{-1}X')X \\\\
+& = X'X - X'X \\\\
+& = 0
+\end{align*}
+so that the first term drops out. At this point we could either do a lot of algebra or we could make use of a convenient statistical property (we will do the latter). The expectation of a _quadratic form_ (i.e. $v'Mv$ for some random vector $v$ and constant matrix $M$) can be written as $$E[v'Mv] = \tr[M\Sigma] + \mu^TM\mu$$ where $\mu$ is the mean of $v$ and $\Sigma$ the covariance of $v$. Using this property we find that
+\begin{align*}
+E[\hat{\sigma^2}]
+& = \frac{1}{n-k}E[\epsilon'M\epsilon] \\\\
+& = \frac{1}{n-k}\tr[M\Sigma(\epsilon)] \\\\
+& = \frac{1}{n-k}\tr[\sigma^2M] \\\\
+& = \frac{\sigma^2}{n-k}\tr[I-H].
+\end{align*}
+Now, so long as $X$ is full rank (i.e. there are no redundant predictors) the hat matrix has trace $k$. This can be shown using complicated eigenvalue proofs that you can find on Google. Thus $\tr[I-H] = \tr[I]-\tr[H] = n-k$. Thus indeed the $n-k$ term drops out and we find that $\hat{\sigma^2}$ is an unbiased estimator of the true residual variance.
+
+### Distribution ###
+In fact, we have done more than show it is unbiased. Much of the algebra that we did actually did not depend on the outer expectation. We actually showed more generally that $$\hat{\sigma^2} = \frac{1}{n-k}\epsilon'M\epsilon.$$ This is useful because it is a _quadratic form_, as we described above. Quadratic forms over multivariate normal random vectors have nice properties which we will now derive. Specifically we will show that: $$\hat{\sigma^2} \sim \frac{\sigma^2}{n-k}\chi^2_{n-k}.$$
+
+This proof will involve some additional use of linear algebraic terms and assumptions. Specifically, we will use the fact that a symmetric matrix $A$ can be decomposed into $A = PDP^T$ for an _orthogonal_ (i.e. $P^2 = I$) matrix $P$ and a diagonal matrix $D$. Orthogonal matrices are nice because $\tilde{z} = Pz$, the product of an orthogonal matrix with a standard normal vector, is still a standard normal vector.
+
+We will also use the fact that if $A$ is symmetric _and_ idempotent then all the diagonal entries are either 0 or 1. We will further use the fact that the number of entries that are 1 is equal to the trace of $A$. Since $M$ is symmetric and idempotent we will use all these properties to show:
+\begin{align*}
+\epsilon'M\epsilon
+& = \epsilon'PDP^T\epsilon \\\\
+& = \sigma^2 z'PDP^Tz \\\\
+& = \sigma^2 \tilde{z}'D\tilde{z} \\\\
+& = \sigma^2 \sum_{i=1}^n D_{ii}\tilde{z}_i^2 \\\\
+& = \sigma^2 \sum_{i=1}^{n-k} \tilde{z}_i^2 \\\\
+& = \sim \sigma^2 \chi^2_{n-k}.
+\end{align*}
